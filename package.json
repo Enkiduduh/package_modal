@@ -1,8 +1,11 @@
 {
   "name": "package_modal",
   "private": true,
+  "description": "A simple modal component",
   "version": "0.0.0",
   "type": "module",
+  "main": "src/Modal.jsx",
+  "module": "src/Modal.jsx",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -11,7 +14,8 @@
   },
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "prop-types": "^15.8.1"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",
@@ -22,5 +26,12 @@
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
     "vite": "^5.3.1"
-  }
+  },
+  "keywords": [
+    "react",
+    "modal",
+    "component"
+  ],
+  "author": "Ilyes Soumar",
+  "license": "MIT"
 }
