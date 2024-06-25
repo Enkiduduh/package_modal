@@ -2,7 +2,7 @@
   "name": "@enkiduh/package_modal",
   "description": "A simple modal component",
   "private": false,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "main": "src/Modal.jsx",
   "module": "src/Modal.jsx",
