@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import './Modal.css';
 
 function Modal({
   isFormSubmitted,
