@@ -3,27 +3,21 @@
   z-index: 2;
   width: 600px;
   height: 200px;
-  border: 2px solid black;
-  font-family: white;
-  background: rgb(168, 168, 168);
+  
 }
 
-.modal-ok,
-.modal-nok {
+.modal-choiceOne,
+.modal-choiceTwo {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
-  font-size: 36px;
-  color: white;
 }
 
-.modal-ok {
-  background: rgb(78, 129, 78);
+.modal-choiceOne {
 }
 
-.modal-nok {
-  background: rgb(142, 83, 83);
+.modal-choiceTwo {
 }
 
 .modal-close {

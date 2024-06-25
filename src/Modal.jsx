@@ -5,8 +5,16 @@ function Modal({
   isFormCompleted,
   onClick,
   isClickedToClose,
+  modalBorder,
+  modalBackground,
   choiceOne,
+  choiceOneBackground,
+  choiceOneColor,
+  choiceOneFontSize,
   choiceTwo,
+  choiceTwoBackground,
+  choiceTwoColor,
+  choiceTwoFontSize,
 }) {
   return (
     <>
@@ -14,13 +22,30 @@ function Modal({
         <>
           <div
             className={`${!isClickedToClose ? "modal-container" : "closed"}`}
+            style={{
+              border: { modalBorder },
+              background: { modalBackground },
+             }}
           >
             {isFormCompleted ? (
-              <div className="modal-ok">
+              <div
+                className="modal-choiceOne"
+                style={{
+                  background: { choiceOneBackground },
+                  color: { choiceOneColor },
+                  fontSize:{ choiceOneFontSize }
+                 }}
+              >
                 <span>{choiceOne}</span>
               </div>
             ) : (
-              <div className="modal-nok">
+              <div className="modal-choiceTwo"
+              style={{
+                background: { choiceTwoBackground },
+                color: { choiceTwoColor },
+                fontSize:{ choiceTwoFontSize }
+               }}
+              >
                 <span>{choiceTwo}</span>
               </div>
             )}
@@ -41,6 +66,14 @@ Modal.propTypes = {
   onClick: PropTypes.func.isRequired,
   choiceOne: PropTypes.string.isRequired,
   choiceTwo: PropTypes.string.isRequired,
+  choiceOneBackground: PropTypes.string.isRequired,
+  choiceOneColor: PropTypes.string.isRequired,
+  choiceOneFontSize: PropTypes.string.isRequired,
+  choiceTwoBackground: PropTypes.string.isRequired,
+  choiceTwoColor: PropTypes.string.isRequired,
+  choiceTwoFontSize: PropTypes.string.isRequired,
+  modalBorder: PropTypes.string.isRequired,
+  modalBackground: PropTypes.string.isRequired,
 };
 
 export default Modal;
