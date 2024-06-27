@@ -1,5 +1,4 @@
 import PropTypes from "prop-types";
-import './Modal.css';
 
 function Modal({
   isFormSubmitted,
@@ -19,33 +18,34 @@ function Modal({
 }) {
   return (
     <>
-      {isFormSubmitted ? (
-        <>
+      {isFormSubmitted && !isClickedToClose && (
+        <div className="modal-background">
           <div
-            className={`${!isClickedToClose ? "modal-container" : "closed"}`}
+            className="modal-container"
             style={{
-              border: { modalBorder },
-              background: { modalBackground },
-             }}
+              border: modalBorder,
+              background: modalBackground,
+            }}
           >
             {isFormCompleted ? (
               <div
                 className="modal-choiceOne"
                 style={{
-                  background: { choiceOneBackground },
-                  color: { choiceOneColor },
-                  fontSize:{ choiceOneFontSize }
-                 }}
+                  background: choiceOneBackground,
+                  color: choiceOneColor,
+                  fontSize: choiceOneFontSize,
+                }}
               >
                 <span>{choiceOne}</span>
               </div>
             ) : (
-              <div className="modal-choiceTwo"
-              style={{
-                background: { choiceTwoBackground },
-                color: { choiceTwoColor },
-                fontSize:{ choiceTwoFontSize }
-               }}
+              <div
+                className="modal-choiceTwo"
+                style={{
+                  background: choiceTwoBackground,
+                  color: choiceTwoColor,
+                  fontSize: choiceTwoFontSize,
+                }}
               >
                 <span>{choiceTwo}</span>
               </div>
@@ -54,8 +54,8 @@ function Modal({
               Ok
             </div>
           </div>
-        </>
-      ) : null}
+        </div>
+      )}
     </>
   );
 }
