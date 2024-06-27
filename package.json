@@ -1,10 +1,10 @@
 {
   "name": "@enkiduh/package_modal",
   "description": "A simple modal component",
-  "version": "0.2.1",
+  "version": "1.0.0",
   "type": "module",
-  "main": "src/Modal.jsx",
-  "module": "src/Modal.jsx",
+  "main": "src/index.js",
+  "module": "src/index.js",
   "types": "typescript/index.d.ts",
   "scripts": {
     "dev": "vite",

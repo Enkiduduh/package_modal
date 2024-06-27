@@ -39,7 +39,6 @@ function App() {
         onClick={handleClick}
         isClickedToClose={isClickedToClose}
         modalBorder="2px solid black"
-        modalBackground="rgb(168, 168, 168)"
         choiceOne="Form Completed"
         choiceOneBackground="rgb(78, 129, 78)"
         choiceOneColor="white"
@@ -73,7 +72,6 @@ The `Modal` component accepts the following props:
 | `isClickedToClose`   | `bool`   | Determines whether the modal should be closed.                             |
 | `onClick`            | `func`   | Function to handle the click event on the close button.                    |
 | `modalBorder`        | `string` | CSS value for the border of the modal.                                     |
-| `modalBackground`    | `string` | CSS value for the background of the modal.                                 |
 | `choiceOne`          | `string` | Text for the choice when the form is completed.                            |
 | `choiceOneBackground`| `string` | CSS value for the background of the choice when the form is completed.     |
 | `choiceOneColor`     | `string` | CSS value for the text color of the choice when the form is completed.     |
