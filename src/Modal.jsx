@@ -6,7 +6,6 @@ function Modal({
   onClick,
   isClickedToClose,
   modalBorder,
-  modalBackground,
   choiceOne,
   choiceOneBackground,
   choiceOneColor,
@@ -24,7 +23,6 @@ function Modal({
             className="modal-container"
             style={{
               border: modalBorder,
-              background: modalBackground,
             }}
           >
             {isFormCompleted ? (
@@ -74,7 +72,6 @@ Modal.propTypes = {
   choiceTwoColor: PropTypes.string.isRequired,
   choiceTwoFontSize: PropTypes.string.isRequired,
   modalBorder: PropTypes.string.isRequired,
-  modalBackground: PropTypes.string.isRequired,
 };
 
 export default Modal;
